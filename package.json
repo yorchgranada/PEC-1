@@ -1,0 +1,28 @@
+{
+  "name": "trabajo",
+  "version": "1.0.0",
+  "description": "\"Trabajo de clase\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "clean": "rimraf dist .cache .cache-loader",
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "\"Jorge Garay\"",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "autoprefixer": "^9.8.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.12.1"
+  }
+}
