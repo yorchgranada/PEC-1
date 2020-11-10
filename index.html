@@ -51,12 +51,14 @@
   </fieldset>
 <ul>
   <li>
-      <label for="si">Sí</label>
-      <input type="radio" id="si" name="pregunta" value="si" onclick="mensajeRespuesta1()">
+    <button type="button" onclick="document.getElementById('demo').innerHTML = '¡Magnífico! Te animamos a conocer a otros autores como Erika Martínez, Andrés Neuman o Luis Rosales'>
+      Sí, los conozco a todos</button>
+      <p id="demo"></p>   
   </li>
   <li>
-      <label for="no">No</label>
-      <input type="radio" id="no" name="pregunta" value="no" onclick="mensajeRespuesta2()">
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Te animamos a visitar nuestra página para conocer más autores'>
+      No, no los conozco a todos</button>
+      <p id="demo"></p>  
   </li>
   </ul>
   <p id="texto"> Esperamos su respuesta.</p>
