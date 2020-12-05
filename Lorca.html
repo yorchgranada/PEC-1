@@ -8,12 +8,15 @@
  <title>Federico García Lorca</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="img\icono-16.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img\icono-32.png" sizes="32x32">
+ <link rel="icon" type="image/svg+xml" href="img\icono.svg" sizes="any">
 </head>
 
 <body>
 <header id="header">
-  <h2>UNESCO Creative Cities Network</h2>
-  <h4>Granada: Ciudad de la Literatura</h4>
+  <h1>UNESCO Creative Cities Network</h1>
+  <h2>Granada: Ciudad de la Literatura</h2>
 </header>
 
 <nav>
@@ -27,10 +30,20 @@
 </nav>
 
 <main>
-<h1>Federico García Lorca</h1>
+<h3>Federico García Lorca</h3>
 
 <figure class="Lorca">
-    <img src="img/Lorca.jpg" alt="Federico García Lorca">
+  <picture>
+    <source srcset="img\Lorca-small.jpg 1x, 
+                    img\Lorca-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\Lorca-big.jpg 1x, 
+                    img\Lorca-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\Lorca-big.jpg" title="Lorca" alt="Federico García Lorca"/>        
+  </picture>
     <figcaption>Federico García Lorca. Autor: <a href="https://www.poetica2puntocero.com/descubre-a-federico-garcia-lorca-a-traves-de-la-videopoesia/" title="Poetica2puntocero" target="_blank">Poética2puntocero</a>. Libre de derechos.</figcaption>
 </figure>
 
@@ -39,6 +52,11 @@
 <p>Nació en los últimos años del siglo XIX en Fuente Vaqueros, un pequeño pueblo a escasos kilómetros de Granada, ciudad a la que se mudaron cuando el autor era aún un niño. Gracias a la acomodada situación económica de la familia, Federico pudo ir a la universidad, primero a la de Granada, donde estudió Filosofía y Letras, y luego a la Residencia de Estudiantes, la institución creada por el rondeño Francisco Giner de los Ríos.</p>
 
 <p>Este inquieto autor creó numerosas obras de poesía, pero también de teatro. Fue especial su vínculo con el teatro, ya que durante la Segunda República codirigió La Barracam un grupo de teatro universitario con el que fueron representando obras por la geografía española.</p>
+
+<figure class="Lorcagif">
+  <img src="img/Lorca.gif" alt="Federico García Lorca" class="gifLorca">
+  <figcaption>Federico García Lorca. Autor: <a href="http://www.eraseunavezqueseera.com/2016/11/11/gifs-de-escritores/" title="Eraseunavezqueseera" target="_blank">Érase una vez</a>.</figcaption>
+</figure>
 
 <p>Algo que no muchos granadinos saben es que Lorca fue, junto con otros intelectuales de la época como Manuel de Falla o Ramón Gómez de la Serna, uno de los precursores del Concurso de Cante jondo, un festival de flamenco, un estilo musical que no gozaba de buena prensa en su momento, y que terminó derivando en el que hoy en día es el Festival Internacional de Música y Danza de Granada, en el que cada mes de junio se reúnen artistas de gran fama internacional y realizan actuaciones en lugares emblemáticos de la ciudad como son el Patio de los Arrayanes o el teatro del Generalife, ambos dentro de la Alhambra, el Corral del Carbón, el Hospital Real o la Catedral.</p>
 
@@ -55,17 +73,33 @@
 <dd>Yerma es otra de sus obras teatrales más representada, y es también protagonizada por una mujer que vive en la España profunda de la época. La protagonista está casada pero ha interiorizado una presión por ser madre y que no consigue llevar a cabo. En esta obra se respira la presión del papel que la sociedad asigna a las mujeres, la importancia que se le daban a las apariencias, y los roles de género de la época.</dd>
 </dl>
 
+<figure class="foto">
+  <picture>
+    <source srcset="img\LorcayGranada-small.jpg 1x, 
+                    img\LorcayGranada-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\LorcayGranada-big.jpg 1x, 
+                    img\LorcayGranada-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\LorcayGranada-big.jpg" title="Lorca" alt="Federico García Lorca"/>        
+  </picture>
+    <figcaption>Cartel espectáculo de Flamenco. Autor: <a href="https://www.juntadeandalucia.es/cultura/lorcaygranada/" title="Lorca y Granada en los Jardines del Generalife" target="_blank">Junta de Andalucía</a>.</figcaption>
+</figure>
+
 <p>Puedes consultar las reseñas de otros autores del siglo XX en los siguientes enlaces:</p>
-<ul>
-  <li>Federico García Lorca</li>
-  <li><a href="Vivaldi.html">Elena Martín Vivaldi</a></li>
-  <li><a href="Ayala.html">Francisco Ayala</a></li>
+<ul class="listasinpuntos">
+  <li><img src="img\Lorca-big.jpg" title="Lorca" alt="Federico García Lorca" class="redondo"/>Federico García Lorca</li>
+  <li><a href="Vivaldi.html"><img src="img\Vivaldi-small.jpg" title="Elena Martín Vivaldi" alt="Elena Martín Vivaldi" class="redondo"/>Elena Martín Vivaldi</a></li>
+  <li><a href="Ayala.html"><img src="img\Ayala-big.jpg" title="Francisco Ayala" alt="Francisco Ayala" class="redondo"/>Francisco Ayala</a></li>
 </ul>
 
 </main>
     
 <footer id="footer">
-<p>Trabajo realizado por Jorge Garay Cañamero. Asignatura: Herramientas HTML y CSS I</p>
+<p>UNESCO Creative Cities Network. Granada: Ciudad de la Literatura</p>
+<img src="img/azulejos.jpeg" alt="azulejos nazaríes" class="fotoAlPie">
 </footer>  
 
 </body>

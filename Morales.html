@@ -8,12 +8,15 @@
  <title>Cristina Morales</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="img\icono-16.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img\icono-32.png" sizes="32x32">
+ <link rel="icon" type="image/svg+xml" href="img\icono.svg" sizes="any">
 </head>
 
-<body> 
+<body>
 <header id="header">
-  <h2>UNESCO Creative Cities Network</h2>
-  <h4>Granada: Ciudad de la Literatura</h4>
+  <h1>UNESCO Creative Cities Network</h1>
+  <h2>Granada: Ciudad de la Literatura</h2>
 </header>
 
 <nav>
@@ -27,31 +30,72 @@
     </nav>
 
 <main>
-<h1>Cristina Morales</h1>
+<h3>Cristina Morales</h3>
 
 <figure class="Morales">
-    <img src="img/Morales.jpg" title= "Portada Lectura fácil" alt="Portada libro Cristina Morales">
-    <figcaption>Portada de una obra de la autora. Autor: <a href="https://www.casadellibro.com/libro-lectura-facil-premio-herralde-de-novela-2018premio-nacional-de-narrativa/9788433998644/8597261" title="Fnac" target="_blank">Casa del Libro</a>.</figcaption>
+  <source srcset="img\Cristina-small.jpg 1x, 
+                img\Cristina-small2x.jpg 2x"
+        media="(min-width: 0px) and 
+                (max-width: 29.99em)">
+<source srcset="img\Cristina-big.jpg 1x, 
+                img\Cristina-big2x.jpg 2x"
+        media="(min-width: 30em)"
+        sizes=" (min-width: 30 em) 33vw">
+  <img src="img/Cristina-big.jpg" title= "Cristina Morales" alt="Crsitina Morales">
+  <figcaption>Cristina Morales. Autor: <a href="https://elpais.com/cultura/2019/10/22/actualidad/1571739915_331313.html" title="El País" target="_blank">El País</a>.</figcaption>
 </figure>
 
 <p>A pesar de su juventud (nació en Granada en 1985), Cristina se ha ganado que la consideren como una de las mayores promesas de la literatura. Aunque algunos ya no la consideran promesa sino una escritora con un recorrido y premios que serían la envidia de muchos otros de más edad.</p>
 
 <p>Cristina Morales se licenció en Derecho y Ciencias Políticas en la Universidad de Granada y trabaja como intérprete jurídica, pero eso no le impide crear obras de gran calado social. Si bien ha publicado varias obras que le han granjeado varios premios, nos centraremos en su obra más exitosa hasta la fecha: <em>Lectura fácil</em>.</p>
 
+<figure class="Libro">
+  <source srcset="img\Morales-small.jpg 1x, 
+                  img\Morales-small2x.jpg 2x"
+          media="(min-width: 0px) and 
+                  (max-width: 29.99em)">
+  <source srcset="img\Morales-big.jpg 1x, 
+                  img\Morales-big2x.jpg 2x"
+          media="(min-width: 30em)"
+          sizes=" (min-width: 30 em) 33vw">
+          <img src="img/Morales-big.jpg" title= "Portada Lectura fácil" alt="Portada libro Cristina Morales">
+    <figcaption>Portada de una obra de la autora. Autor: <a href="https://www.casadellibro.com/libro-lectura-facil-premio-herralde-de-novela-2018premio-nacional-de-narrativa/9788433998644/8597261" title="Fnac" target="_blank">Casa del Libro</a>.</figcaption>
+</figure>
+
 <dl>
 <dt><em>Lectura fácil</em></dt>
 <dd>La Multipremiada obra de Cristina Morales (Premio Herralnde de Novela y Premio Nacional de Narrativa) fue publicada en 2018. La novela está protagonizada por cuatro mujeres con diversos grados de discapacidad intelectual y en ella se aprecia claramente el estilo combativo de la autora. Esta obra es un alegato al propio cuerpo, al cuerpo femenino y a las grandes capacidades de los conocidos como discapacitados.</dd>
 </dl>
 
-<p>Puedes consultar las reseñas de otros autores actuales en los siguientes enlaces:</p><ul>
-    <li><a href="Montero.html">Luis García Montero</a></li>
-    <li>Cristina Morales</li>
+<p>Tras el gran éxito cosechado por <em>Lectura fácil</em>, la editorial ha vuelto a reeditar sus dos novelas anteriores: <em>Los Combatientes</em> e <em>Introducción a Teresa de Jesús</em>. La primera de ellas recogía el espíritu del 15-M, mientras que la segunda (que originalmente se titulaba <em>Malas palabras</em>) se trata de un supuesto diario escrito por la mística abulense, en una versión más libre y feminista de sí misma.</p>
+
+<figure class="foto">
+  <picture>
+    <source srcset="img\teresa-small.jpg 1x, 
+                    img\teresa-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\teresa-big.jpg 1x, 
+                    img\teresa-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\teresa-big.jpg" title="Santa Teresa de Jesús" alt="Teresa de Jesús"/>        
+  </picture>
+    <figcaption>Teresa de Jesús. Autor: <a href="http://www.cervantesvirtual.com/portales/santa_teresa_de_jesus/" title="Teresa de Jesús" target="_blank">Instituto Cervantes</a>.</figcaption>
+</figure>
+
+<p>Puedes consultar las reseñas de otros autores actuales en los siguientes enlaces:</p>
+
+<ul class="listasinpuntos">
+    <li><a href="Montero.html"><img src="img\Luis-big.jpg" title="Luis García Montero" alt="Luis García Montero" class="redondo"/>Luis García Montero</a></li>
+    <li><img src="img\Cristina-small.jpg" title="Cristina Morales" alt="Cristina Morales" class="redondo"/>Cristina Morales</li>
   </ul>
 
 </main>
     
 <footer id="footer">
-<p>Trabajo realizado por Jorge Garay Cañamero. Asignatura: Herramientas HTML y CSS I</p>
+<p>UNESCO Creative Cities Network. Granada: Ciudad de la Literatura</p>
+<img src="img/azulejos.jpeg" alt="azulejos nazaríes" class="fotoAlPie">
 </footer>  
 
 </body>

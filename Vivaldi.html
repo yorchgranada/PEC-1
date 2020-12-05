@@ -8,12 +8,15 @@
  <title>Elena Martín Vivaldi</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="img\icono-16.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img\icono-32.png" sizes="32x32">
+ <link rel="icon" type="image/svg+xml" href="img\icono.svg" sizes="any">
 </head>
 
-<body> 
+<body>
 <header id="header">
-  <h2>UNESCO Creative Cities Network</h2>
-  <h4>Granada: Ciudad de la Literatura</h4>
+  <h1>UNESCO Creative Cities Network</h1>
+  <h2>Granada: Ciudad de la Literatura</h2>
 </header>
 
 <nav>
@@ -27,11 +30,41 @@
 </nav>
 
 <main>
-<h1>Elena Martín Vivaldi</h1>
+<h3>Elena Martín Vivaldi</h3>
+
+<figure class="Lorca">
+  <picture>
+    <source srcset="img\Vivaldi-small.jpg 1x, 
+                    img\Vivaldi-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\Vivaldi-big.jpg 1x, 
+                    img\Vivaldi-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\Vivaldi-big.jpg" title="Vivaldi" alt="Elena Martín Vivaldi"/>        
+  </picture>
+    <figcaption>Elena Martín Vivaldi. Autor: <a href="https://www.ideal.es/hemerotecadegranada/anos-muerte-elena-20180313140535-nt.html" title="Diario Ideal de Granada" target="_blank">Diario Ideal de Granada</a>.</figcaption>
+</figure>
 
 <p>Elena Martín Vivaldi nació en Granada en 1907 en el seno de una familia acomodada (su padre era catedrático en medicina y llegó a ser alcalde de la ciudad durante unos meses). A pesar de la oposición de su madre, cursó estudios de Bachillerato, de Magisterio, así como Filología Románica, en una época en la que apenas estudiaban mujeres.</p>
 
 <p>A pesar de que su profesión principal era la de bibliotecaria, Elena también destacó en el mundo de la poesía. Con un estilo intimista y melancólico e incluso con un romanticismo que recuerda a Bécquer, algunos la consideran contemporánea a los autores de la generación del 27, si bien también muchos la ven como la conexión entre estos y la generación de autores posteriores. Su prolífica obra comenzó en 1945 con su poemario <em>Escalera de luna</em> hasta la publicación de <em>Desengaños del amor fingido</em> publicado en 1986, con un total de 11 poemarios, más otros dos póstumos, junto con 12 antologías.</p>
+
+<figure class="Lorca">
+  <picture>
+    <source srcset="img\Biblioteca-small.jpg 1x, 
+                    img\Biblioteca-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\Biblioteca-big.jpg 1x, 
+                    img\Biblioteca-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\Biblioteca-big.jpg" title="Biblioteca Central de la Universidad" alt="Biblioteca Central de la Universidad"/>        
+  </picture>
+    <figcaption>Biblioteca Central de la Universidad de Granada. Autor: <a href="https://www.granadahoy.com/granada/biblioteca-hospital-real-abrira-navidad_0_1309669309.html" title="Diario Granada Hoy" target="_blank">Diario Granada Hoy</a>.</figcaption>
+</figure>
 
 <p>Esta poetisa (ella dejó claro que prefería este apelativo en lugar de &quot;Poeta&quot;) fue rompiendo moldes a lo largo de su vida. Estudió cuando apenas lo hacían unas pocas mujeres, vivió sola en la época de la dictadura, utilizaba pantalones cuando aún no estaba bien visto que lo hiciera una mujer, fumaba en público y formó parte de grupos literarios integrados mayoritariamente por hombres.</p>
 
@@ -41,16 +74,18 @@
 
 <iframe src="https://www.youtube.com/embed/m3KsazyZVDw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Puedes consultar las reseñas de otros autores del siglo XX en los siguientes enlaces:</p>
-<ul>
-  <li><a href="Lorca.html">Federico García Lorca</a></li>
-  <li>Elena Martín Vivaldi</li>
-  <li><a href="Ayala.html">Francisco Ayala</a></li>
+
+<ul class="listasinpuntos">
+  <li><a href="Lorca.html"><img src="img\Lorca-big.jpg" title="Lorca" alt="Federico García Lorca" class="redondo"/>Federico García Lorca</a></li>
+  <li><img src="img\Vivaldi-small.jpg" title="Elena Martín Vivaldi" alt="Elena Martín Vivaldi" class="redondo"/>Elena Martín Vivaldi</li>
+  <li><a href="Ayala.html"><img src="img\Ayala-big.jpg" title="Francisco Ayala" alt="Francisco Ayala" class="redondo"/>Francisco Ayala</a></li>
 </ul>
 
 </main>
     
 <footer id="footer">
-<p>Trabajo realizado por Jorge Garay Cañamero. Asignatura: Herramientas HTML y CSS I</p>
+<p>UNESCO Creative Cities Network. Granada: Ciudad de la Literatura</p>
+<img src="img/azulejos.jpeg" alt="azulejos nazaríes" class="fotoAlPie">
 </footer>  
 
 </body>

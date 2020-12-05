@@ -7,6 +7,16 @@ main {
   padding: 15px 20%;
 }
 h1 {
+  font-family: 'Acme', Helvetica, sans-serif;
+	font-size: 26px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+	font-size: 20px;
+  margin-bottom: 15px;
+}
+h3 {
 	font-family: 'Acme', Helvetica, sans-serif;
 	font-size: 36px;
   margin-bottom: 15px;
@@ -25,7 +35,7 @@ main li {
   padding-bottom: 15px;
 }
 #header {
-	background-image: url('img/UNESCO.svg');
+	background-image: url('img/iconoUnesco.svg');
 	background-repeat: no-repeat;
 	background-position: center right 20%;
 	background-size: 120px;
@@ -74,11 +84,18 @@ nav li.actual {
 .Lorca {
   width: 400px;
   float: right;
-  max-width: 50%;
+  max-width: 40%;
 }
 .Lorca img {
   width: 100%;
   height: auto;
+}
+.Lorcagif {
+  float: left;
+}
+.gifLorca {
+  width: 200px;
+  max-height: 200px;
 }
 .Morales {
   width: 250px;
@@ -88,6 +105,28 @@ nav li.actual {
 .Morales img {
   width: 100%;
   height: auto;
+}
+.Libro {
+  max-width: 200px;
+  float: right;
+}
+.Libro img {
+  width: 100%;
+  height: auto;
+}
+.redondo {
+  width: 5vw;
+  height: 5vh;
+  -webkit-clip-path: ellipse(50% 50%);
+  clip-path: ellipse(50% 50%);
+  transition: width 0.5s ease-out;
+}
+.redondo:hover {
+  width: 10vw;
+  height: 10vh;
+}
+.listasinpuntos {
+  list-style: none;
 }
 dt {
   font-family: 'Open Sans', sans-serif;
@@ -116,13 +155,33 @@ iframe {
   height: 315px;
   border: "0";
 }
-
 #footer {
-	padding: 20px;
+  padding: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
 	text-align: center;
-	border-top: 2px solid peachpuff;
+  border-top: 2px solid peachpuff;
 }
 #footer p {
 	margin: 0;
 	font-size: 16px;
+}
+.fotoAlPie {
+  -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  animation: 5s poly infinite alternate ease-in-out;
+  margin: 1em auto;
+  display: block;
+  max-height: 10vh;
+}
+@keyframes poly {
+  from {
+      -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+      clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  }
+  
+  to {
+    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  }
 }

@@ -9,12 +9,15 @@
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
  <script src="index.js"></script>
+ <link rel="icon" type="image/png" href="img\icono-16.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img\icono-32.png" sizes="32x32">
+ <link rel="icon" type="image/svg+xml" href="img\icono.svg" sizes="any">
 </head>
 
 <body>
 <header id="header">
-  <h2>UNESCO Creative Cities Network</h2>
-  <h4>Granada: Ciudad de la Literatura</h4>
+  <h1>UNESCO Creative Cities Network</h1>
+  <h2>Granada: Ciudad de la Literatura</h2>
 </header>
 
 <nav>
@@ -28,12 +31,22 @@
     </nav>
 
 <main>
-<h1>Granada y su literatura</h1>
+<h3>Granada y su literatura</h3>
 
 <p>La ciudad de Granada es mundialmente conocida por su herencia islámica y sus monumentos de origen andalusí, así como por las posteriores aportaciones arquitectónicas cristianas, amén de monumentos menos conocidos que se remontan siglos atrás con respecto a la llegada de los árabes.<p>
 
-<figure class="foto">
-    <img src="img/Alhambra.jpeg" title="Alhambra" alt="Alhambra de Granada">
+<figure class="foto"></figure>
+<picture>
+  <source srcset="img\Alhambra-small.jpeg 1x, 
+                  img\Alhambra-small2x.jpeg 2x"
+          media="(min-width: 0px) and 
+                  (max-width: 29.99em)">
+  <source srcset="img\Alhambra-big.jpeg 1x, 
+                  img\Alhambra-big2x.jpeg 2x"
+          media="(min-width: 30em)"
+          sizes=" (min-width: 30 em) 33vw">
+  <img src="img\Alhambra-big.jpeg" title="Alhambra" alt="Alhambra de Granada"/>        
+</picture>
     <figcaption>Panorámica de la ciudad de Granada. Autor: Jorge Garay</figcaption>
 </figure>
 
@@ -48,23 +61,24 @@
 <form name="formulario">
   <fieldset>
       <legend>Indica si conoces a todos estos autores granadinos: Federico García Lorca, Elena Martín Vivaldi, Francisco Ayala, Luis García Montero, Cristina Morales</legend>
-  </fieldset>
 <ul>
   <li>
       <label for="si">Sí</label>
-      <input type="radio" id="si" name="pregunta" value="si" onclick="mensajeRespuesta1()">
+      <input type="radio" id="si" name="pregunta" value="si" addEventListener="mensajeRespuesta1()">
   </li>
   <li>
       <label for="no">No</label>
-      <input type="radio" id="no" name="pregunta" value="no" onclick="mensajeRespuesta2()">
+      <input type="radio" id="no" name="pregunta" value="no" addEventListener="mensajeRespuesta2()">
   </li>
   </ul>
+</fieldset>
 </form>
 
 </main>
 
 <footer id="footer">
-<p>Trabajo realizado por Jorge Garay Cañamero. Asignatura: Herramientas HTML y CSS I</p>
+<p>UNESCO Creative Cities Network. Granada: Ciudad de la Literatura</p>
+<img src="img/azulejos.jpeg" alt="azulejos nazaríes" class="fotoAlPie">
 </footer>  
 </body>
 

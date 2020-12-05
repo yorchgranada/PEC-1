@@ -8,12 +8,15 @@
  <title>Poesía Siglo XX</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="img\icono-16.png" sizes="16x16">
+ <link rel="icon" type="image/png" href="img\icono-32.png" sizes="32x32">
+ <link rel="icon" type="image/svg+xml" href="img\icono.svg" sizes="any">
 </head>
 
 <body>
 <header id="header">
-  <h2>UNESCO Creative Cities Network</h2>
-  <h4>Granada: Ciudad de la Literatura</h4>
+  <h1>UNESCO Creative Cities Network</h1>
+  <h2>Granada: Ciudad de la Literatura</h2>
 </header>
 
 <nav>
@@ -27,7 +30,7 @@
     </nav>
 
 <main>
-<h1>Autores hasta el siglo XX</h1>
+<h3>Autores hasta el siglo XX</h3>
 
 <p>El gran peso de la ciudad de Granada en la literatura española no se limita únicamente a la obra de autores tales como Federico García Lorca, Luis Garcia Montero, Luis Rosales, Luis Guillén, Ángel Ganivet, Andrés Neuman o Cristina Morales. En realidad, esta ciudad ha visto nacer, ha acogido o influenciado a un gran número de autores de todos los tiempos.</p>
 
@@ -36,7 +39,17 @@
 <p>Los Libros Plúmbeos son unos discos hechos en plomo (de ahí su nombre) que fueron encontrados a finales del siglo XVI enterrados en el monte Valparaíso, hoy conocido como el Sacromonte. Estos discos contenían los pasajes comunes de la Biblia, el Corán y la Torá, lo que podría constituir una prueba de que las tres religiones tenían mucho en común y que por ende la convivencia debería ser posible. Estos libros crearon tal revuelo en la ciudad que enviaron personal del Vaticano para estudiarlos, los cuales no fueron devueltos hasta el siglo XX. Por su aspecto, escritura y gramática, debían llevar enterrados allí varios siglos, pero lamentablemente estos discos han pasado a la historia como una de las falsificaciones más sonadas de la historia.</p>
 
 <figure class="foto">
-  <img src="img/Sacromonte.jpg" title="Sacromonte" alt="Panorámica del barrio granadino del Sacromonte">
+  <picture>
+    <source srcset="img\Sacromonte-small.jpg 1x, 
+                    img\Sacromonte-small2x.jpg 2x"
+            media="(min-width: 0px) and 
+                    (max-width: 29.99em)">
+    <source srcset="img\Sacromonte-big.jpg 1x, 
+                    img\Sacromonte-big2x.jpg 2x"
+            media="(min-width: 30em)"
+            sizes=" (min-width: 30 em) 33vw">
+    <img src="img\Sacromonte-big.jpg" title="Sacromonte" alt="Panorámica del barrio granadino del Sacromonte"/>        
+  </picture>
   <figcaption>Panorámica del barrio del Sacromonte. Autor: Jorge Garay</figcaption>
 </figure>
 
@@ -45,10 +58,10 @@
 <p> En este mismo lugar aconteció unos siglos después un acontecimiento literario de lo más esperpéntico. El poeta vallisoletano José Zorrilla, a pesar de haber disfrutado de un gran éxito literario, a finales del siglo XIX se encontraba en una situación económica acuciante. Por ese motivo y por ser Granada una ciudad con una gran vinculación con el artista (no en vano fue la ciudad más nombrada en sus obras), el Ayuntamiento granadino decidió nombrarle hijo adoptivo y organizar un acto en el Carmen de los Mártires en el que se le haría entrega de regalos tales como coronas de laureles de oro y otros elementos de aparente gran valor, pero que resultaron ser de calidad ínfima. Con esto se rompieron los planes del autor de empeñar los regalos y obtener cuantiosas sumas que le permitieran vivir más holgadamente sus últimos años de vida.</p>
 
 <p>No obstante, la época de mayor esplendor literario vino en el siglo XX, de la mano de autores tales como:</p>
-<ul>
-  <li><a href="Lorca.html">Federico García Lorca</a></li>
-  <li><a href="Vivaldi.html">Elena Martín Vivaldi</a></li>
-  <li><a href="Ayala.html">Francisco Ayala</a></li>
+<ul class="listasinpuntos">
+  <li><a href="Lorca.html"><img src="img\Lorca-big.jpg" title="Lorca" alt="Federico García Lorca" class="redondo"/>Federico García Lorca</a></li>
+  <li><a href="Vivaldi.html"><img src="img\Vivaldi-small.jpg" title="Elena Martín Vivaldi" alt="Elena Martín Vivaldi" class="redondo"/>Elena Martín Vivaldi</a></li>
+  <li><a href="Ayala.html"><img src="img\Ayala-big.jpg" title="Francisco Ayala" alt="Francisco Ayala" class="redondo"/>Francisco Ayala</a></li>
 </ul>
 
 <p>Para conocer un poco más sobre cada uno de estos autores del siglo XX, haga click en su nombre.</p>
@@ -56,7 +69,8 @@
 </main>
     
 <footer id="footer">
-<p>Trabajo realizado por Jorge Garay Cañamero. Asignatura: Herramientas HTML y CSS I</p>
+<p>UNESCO Creative Cities Network. Granada: Ciudad de la Literatura</p>
+<img src="img/azulejos.jpeg" alt="azulejos nazaríes" class="fotoAlPie">
 </footer>  
 
 </body>
