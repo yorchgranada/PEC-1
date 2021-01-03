@@ -8,7 +8,7 @@
  <title>Index</title>
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
- <script src="index.js"></script>
+
  <link rel="icon" type="image/png" href="img/icono-16.png" sizes="16x16">
  <link rel="icon" type="image/png" href="img/icono-32.png" sizes="32x32">
  <link rel="icon" type="image/svg+xml" href="img/icono.svg" sizes="any">
@@ -43,8 +43,7 @@
                   (max-width: 29.99em)">
   <source srcset="img/Alhambra-big.jpeg 1x, 
                   img/Alhambra-big2x.jpeg 2x"
-          media="(min-width: 30em)"
-          sizes=" (min-width: 30em) 33vw">
+          media="(min-width: 30em)">
   <img src="img/Alhambra-big.jpeg" title="Alhambra" alt="Alhambra de Granada"/>        
 </picture>
     <figcaption>Panorámica de la ciudad de Granada. Autor: Jorge Garay</figcaption>
@@ -64,15 +63,19 @@
 <ul>
   <li>
       <label for="si">Sí</label>
-      <input type="radio" id="si" name="pregunta" value="si" addEventListener="mensajeRespuesta1()">
+      <input type="radio" id="si" name="pregunta" value="si" onclick="mensajeRespuesta1()">
+      <script> function mensajeRespuesta1() { alert("¡Magnífico! Te animamos a conocer a otros autores como Erika Martínez, Andrés Neuman o Luis Rosales"); }</script>
   </li>
   <li>
       <label for="no">No</label>
-      <input type="radio" id="no" name="pregunta" value="no" addEventListener="mensajeRespuesta2()">
+      <input type="radio" id="no" name="pregunta" value="no" onclick="mensajeRespuesta2()">
+      <script> function mensajeRespuesta2() { alert("Te animamos a visitar nuestra página para conocer más autores"); }</script>
   </li>
   </ul>
 </fieldset>
 </form>
+
+
 
 </main>
 
